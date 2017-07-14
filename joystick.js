@@ -35,6 +35,11 @@ function setup(playerDuration) {
         "chart": {
             "renderTo": 'graph'
         },
+
+        title: {
+        text: 'Sense Making Curve'
+        },
+
         "yAxis": {
             "min": -1,
             "max": 1

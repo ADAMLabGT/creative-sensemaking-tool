@@ -1,5 +1,5 @@
 //get the session name from local storage
-var url = JSON.parse(localStorage["url"]);
+//var url = JSON.parse(localStorage["url"]);
 var tag = document.createElement('script');
 var prev = [];
 
@@ -15,11 +15,12 @@ function onPlayerReady(event) {
 }
 
 function onYouTubeIframeAPIReady() {
-    if (url) {
+    console.log(localStorage["url"]);
+    if (localStorage["url"]) {
         player = new YT.Player('player', {
             height: '390',
             width: '640',
-            videoId: url,
+            videoId: localStorage["url"],
             events: {
                 'onReady': onPlayerReady
             }
