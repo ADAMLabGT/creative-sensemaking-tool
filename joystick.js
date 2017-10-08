@@ -44,6 +44,8 @@ function setup(playerDuration) {
             "min": -1,
             "max": 1
         },
+        //create an x axis object here so it doesn't start at -100
+        //put the label for the x axis of the graph here too
         "series": [{
             "data": data,
             "type": "spline",
@@ -67,6 +69,7 @@ function setup(playerDuration) {
 //sets the slider
 function slider() {
     $('#slider-vertical').slider({
+        //setting height to a pixel value doesn't work here
         orientation: "vertical",
         animate: "fast",
         range: "min",
