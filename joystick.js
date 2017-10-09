@@ -44,6 +44,12 @@ function setup(playerDuration) {
             "min": -1,
             "max": 1
         },
+        "xAxis": {
+            "min": 0, //not working yet
+        },
+        legend: {
+            enabled: false //disables "series 1" default labeling x axis
+        },
         //create an x axis object here so it doesn't start at -100
         //put the label for the x axis of the graph here too
         "series": [{
